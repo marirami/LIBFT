@@ -1,37 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 17:03:12 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/27 13:07:32 by marirami         ###   ########.fr       */
+/*   Created: 2022/12/15 17:44:57 by marirami          #+#    #+#             */
+/*   Updated: 2022/12/19 11:20:52 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	i;
-	char	*st;
+	size_t		i;
+	const char	*str;
 
 	i = 0;
-	st = s;
+	str = s;
 	while (i < n)
 	{
-		st[i] = 0;
+		if (str[i] == (char)c)
+		{
+			return ((char *)(str + i));
+		}
 		i++;
 	}
+	return (NULL);
 }
 /* #include <stdio.h>
 int main()
 {
-	char str[] = "Zero";
+   const char str[] = "string";
+   const char c = 'i';
+   char *x;
 
-	printf("Cadena original: %s\n", str);
-	ft_bzero(str, 2);
-	printf("Cadena después de ft_bzero: %s\n", str);
-	return (0);
-} */
+   x = ft_memchr(str, c, 4);
+   
+   printf("String after |%c| is - |%s|\n", c, x);
+   
+   return (0);
+}
+ */

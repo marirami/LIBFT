@@ -6,12 +6,11 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 12:27:56 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/06 14:30:02 by marirami         ###   ########.fr       */
+/*   Updated: 2022/12/14 12:52:08 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memset(void *str, int c, size_t n)
 {

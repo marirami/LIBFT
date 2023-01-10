@@ -6,7 +6,7 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 18:06:18 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/13 15:40:07 by marirami         ###   ########.fr       */
+/*   Updated: 2022/12/16 13:30:40 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int i;
-	
-	i = 0; 
-	while(s[i])
+	int	i;
+
+	i = 0;
+	while (s[i])
 	{
 		i++;
 	}
-	while(i >= 0)
+	while (i >= 0)
 	{
 		if (s[i] == (char)c)
 		{
@@ -31,8 +31,7 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
+/*#include <stdio.h>
 int main () 
 {
    const char s[] = "http://www.tutorialspoint.com";

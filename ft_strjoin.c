@@ -1,37 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 17:03:12 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/27 13:07:32 by marirami         ###   ########.fr       */
+/*   Created: 2023/01/03 15:19:13 by marirami          #+#    #+#             */
+/*   Updated: 2023/01/04 11:40:35 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+char *ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	i;
-	char	*st;
-
-	i = 0;
-	st = s;
-	while (i < n)
-	{
-		st[i] = 0;
-		i++;
-	}
+    char    *str;
+    size_t  i;
+    
+    i = 0;
+    int len = ft_strlen(s1) + ft_strlen(s2) + 1;
+    str = (char *) malloc (sizeof(char) * len);
+    
+    if (str == NULL)
+    {
+        return (NULL);
+    }
+    while (*s1)
+    {
+        str[i] = *s1++;
+        i++;
+    }
+    while (*s2)
+    {
+        str[i] = *s2++;
+        i++;
+    }
+    str[i] = '\0';
+    return (str);
 }
-/* #include <stdio.h>
-int main()
-{
-	char str[] = "Zero";
-
-	printf("Cadena original: %s\n", str);
-	ft_bzero(str, 2);
-	printf("Cadena después de ft_bzero: %s\n", str);
-	return (0);
-} */

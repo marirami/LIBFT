@@ -1,31 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/09 11:48:31 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/27 18:04:30 by marirami         ###   ########.fr       */
+/*   Created: 2022/12/20 12:22:13 by marirami          #+#    #+#             */
+/*   Updated: 2022/12/21 16:12:45 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+int	ft_atoi(const char *str)
 {
-	if (c >= 'a' && c <= 'z')
+	int	i;
+	int	sig;
+	int	nb;
+
+	i = 0;
+	sig = 1;
+	nb = 0;
+	while ((str[i] >= '\t' && str[i] <= '\r') || str[i] == 32)
+		i++;
+	while ((str[i] == '-' || str[i] == '+') && str[i])
 	{
-		c = c - 32;
+		if (str[i] == '-')
+			sig = sig * -1;
+		i++;
+		if (str[i] == '-' || str[i] == '+')
+			return (0);
 	}
-	return (c);
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		nb = (nb * 10) + (str[i] - '0');
+		i++;
+	}
+	return (nb * sig);
 }
-/*
-#include <ctype.h>
+/*#include <stdlib.h>
 #include <stdio.h>
 int main ()
 {
-    printf("%c", ft_toupper('h'));
+    printf ("%d\n", ft_atoi(" 25m5b"));
     return (0);
-}
-*/
+}*/

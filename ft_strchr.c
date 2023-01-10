@@ -6,7 +6,7 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 15:44:28 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/12 17:56:42 by marirami         ###   ########.fr       */
+/*   Updated: 2022/12/28 15:32:51 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,18 +28,16 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
+/* #include <stdio.h>
 int main () 
 {
-   const char s[] = "http://www.tutorialspoint.com";
+   const char s[] = "ho/la";
    const char c = '/';
    char *ret;
 
    ret = strchr(s, c);
    
    printf("String after |%c| is - |%s|\n", c, ret);
-   
    return (0);
 }
-*/
+ */

@@ -1,37 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 17:03:12 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/27 13:07:32 by marirami         ###   ########.fr       */
+/*   Created: 2023/01/03 17:50:39 by marirami          #+#    #+#             */
+/*   Updated: 2023/01/03 18:16:58 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void ft_putchar_fd(char c, int fd)
 {
-	size_t	i;
-	char	*st;
-
-	i = 0;
-	st = s;
-	while (i < n)
-	{
-		st[i] = 0;
-		i++;
-	}
+    write(fd, &c, 1);
 }
-/* #include <stdio.h>
-int main()
-{
-	char str[] = "Zero";
-
-	printf("Cadena original: %s\n", str);
-	ft_bzero(str, 2);
-	printf("Cadena después de ft_bzero: %s\n", str);
-	return (0);
-} */

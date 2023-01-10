@@ -6,7 +6,7 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 17:44:36 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/06 14:35:20 by marirami         ###   ########.fr       */
+/*   Updated: 2022/12/27 17:48:25 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,18 +38,21 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dstleng = size;
 	return (dstleng + srcleng);
 }
-/*
-#include <stdio.h>
+/* #include <stdio.h>
  int main()
 {
     char dst[20] = "viaje";
     const char src[20] = "nuevo";
     size_t x;
+	
     x = ft_strlcat(dst,src,5);
+	
     printf("%zu\n",x);
     printf("Before strlcpy dst = %s, src = %s\n", dst, src);
+	
     ft_strlcat(dst, src, 11);
+	
     printf("After strlcpy dst = %s, src = %s\n", dst, src);
     return (0);
 }
-*/
+ */

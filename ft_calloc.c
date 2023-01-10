@@ -1,37 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 17:03:12 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/27 13:07:32 by marirami         ###   ########.fr       */
+/*   Created: 2022/12/21 13:13:13 by marirami          #+#    #+#             */
+/*   Updated: 2022/12/29 12:02:19 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+void	*ft_calloc(size_t count, size_t size)
 {
-	size_t	i;
-	char	*st;
+	void	*ptr;
 
-	i = 0;
-	st = s;
-	while (i < n)
+	ptr = malloc(count * size);
+	if (ptr == NULL)
 	{
-		st[i] = 0;
-		i++;
+		return (NULL);
 	}
+	ft_memset(ptr, 0, count * size);
+	return (ptr);
 }
-/* #include <stdio.h>
-int main()
+/*#include <stdio.h>
+int main(void)
 {
-	char str[] = "Zero";
-
-	printf("Cadena original: %s\n", str);
-	ft_bzero(str, 2);
-	printf("Cadena después de ft_bzero: %s\n", str);
+	int *array;
+	
+	array = (int *)ft_calloc(10, sizeof(int));
+	if (array == NULL)
+	{
+		printf("Error allocating memory\n");
+		return (1);
+	}
+	
+	for (int i = 0; i < 10; i++)
+	{
+		printf("%d ", array[i]);
+	}
+	printf("\n");
+	
+	free(array);
 	return (0);
-} */
+}*/
