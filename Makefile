@@ -6,7 +6,7 @@
 #    By: marirami <marirami@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/05 19:35:22 by marirami          #+#    #+#              #
-#    Updated: 2023/01/04 17:53:25 by marirami         ###   ########.fr        #
+#    Updated: 2023/01/13 11:30:54 by marirami         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ SRCS			=	ft_isalnum.c     ft_isprint.c     ft_strlcat.c \
 					ft_substr.c      ft_putchar_fd.c  ft_putstr_fd.c\
 					ft_putendl_fd.c  ft_putnbr_fd.c   ft_striteri.c\
 					ft_strjoin.c     ft_strtrim.c     ft_strmapi.c\
+					ft_itoa.c        ft_split.c
    
 				
 OBJS			= $(SRCS:.c=.o)

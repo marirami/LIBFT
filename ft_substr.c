@@ -6,7 +6,7 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/03 10:54:04 by marirami          #+#    #+#             */
-/*   Updated: 2023/01/03 15:10:10 by marirami         ###   ########.fr       */
+/*   Updated: 2023/01/13 12:45:54 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str = (char *)s + start;
 	length_str = ft_strlen(str);
 	if (length_str < len)
-		len = ++length_str;
+		len = length_str + 1;
 	else
-		len++;
+		len = len + 1;
 	ret = malloc(sizeof(char) * len);
 	if (ret == NULL)
 		return (NULL);
