@@ -6,12 +6,11 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 11:46:50 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/27 14:57:04 by marirami         ###   ########.fr       */
+/*   Updated: 2023/01/24 10:44:30 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

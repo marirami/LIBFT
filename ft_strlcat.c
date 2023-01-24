@@ -6,12 +6,11 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 17:44:36 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/27 17:48:25 by marirami         ###   ########.fr       */
+/*   Updated: 2023/01/24 10:45:04 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -32,7 +31,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 			j++;
 			i++;
 		}
-		dst[j] = 0;
+		dst[j] = '\0';
 	}
 	if (dstleng >= size)
 		dstleng = size;

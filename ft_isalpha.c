@@ -6,11 +6,11 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 11:25:09 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/06 11:03:56 by marirami         ###   ########.fr       */
+/*   Updated: 2023/01/24 10:43:40 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {
@@ -20,11 +20,8 @@ int	ft_isalpha(int c)
 	}
 	return (0);
 }
-/*
-int main()
+
+/* int main()
 {
-	int c;
-	c = 70;
-	printf("%d", ft_isalpha(c));
-}
-*/
+	printf("%d", ft_isalpha(66));
+} */

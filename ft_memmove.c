@@ -6,12 +6,11 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 12:01:25 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/27 15:30:46 by marirami         ###   ########.fr       */
+/*   Updated: 2023/01/24 10:44:35 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {

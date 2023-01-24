@@ -6,7 +6,7 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 12:27:56 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/14 12:52:08 by marirami         ###   ########.fr       */
+/*   Updated: 2023/01/23 15:02:10 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ void	*ft_memset(void *str, int c, size_t n)
 	}
 	return (str);
 }
-/*
-#include <stdio.h>
+
+/* #include <stdio.h>
 int main()
 {
 	char str[50];
@@ -38,5 +38,4 @@ int main()
 	ft_memset(str, '$', 5);
 	puts(str);
 	return(0);
-}
-*/
+} */

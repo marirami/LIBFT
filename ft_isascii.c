@@ -6,9 +6,11 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 14:31:37 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/06 11:31:39 by marirami         ###   ########.fr       */
+/*   Updated: 2023/01/24 10:43:28 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
@@ -18,13 +20,9 @@ int	ft_isascii(int c)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
+
+/* #include <stdio.h>
 int main()
 {
-	int c;
-	c = 164;
-	printf("%d", ft_isascii(c));
-	return(0);
-}
-*/
+	printf("%d", ft_isascii(164))
+} */

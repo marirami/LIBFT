@@ -6,9 +6,11 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 16:19:38 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/06 11:11:44 by marirami         ###   ########.fr       */
+/*   Updated: 2023/01/24 10:44:22 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -18,13 +20,9 @@ int	ft_isprint(int c)
 	}
 	return (0);
 }
-/*
+/* 
 #include <stdio.h>
 int main()
 {
-    int c;
-    c = 100;
-    printf("%d", ft_isprint(c));
-    return(0);
-}
-*/
+    printf("%d", ft_isprint(127));
+} */

@@ -6,7 +6,7 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 14:54:34 by marirami          #+#    #+#             */
-/*   Updated: 2023/01/13 11:30:44 by marirami         ###   ########.fr       */
+/*   Updated: 2023/01/24 10:46:47 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # include <string.h>
 # include <stdlib.h> 
 # include <unistd.h>
+# include <stdio.h>
+# include <ctype.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int a);
