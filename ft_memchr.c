@@ -29,3 +29,17 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+/* #include <stdio.h>
+int main()
+{
+   const char str[] = "string";
+   const char c = 'i';
+   char *x;
+
+   x = ft_memchr(str, c, 4);
+   
+   printf("String after |%c| is - |%s|\n", c, x);
+   
+   return (0);
+}
+ */
