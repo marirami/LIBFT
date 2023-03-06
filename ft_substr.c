@@ -6,7 +6,7 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/03 10:54:04 by marirami          #+#    #+#             */
-/*   Updated: 2023/01/13 12:45:54 by marirami         ###   ########.fr       */
+/*   Updated: 2023/03/06 16:48:12 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_strlcpy(ret, str, len);
 	return (ret);
 }
-/*#include <stdio.h>
-
-int main()
-{
-  char str[] = "Hello world!";
-  char *subcadena;
-  subcadena = ft_substr(str, 5, 7);
-  printf("%s\n", subcadena);
-  free(subcadena);
-  return (0);
-}*/

@@ -1,42 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/05 12:01:25 by marirami          #+#    #+#             */
-/*   Updated: 2023/03/06 16:46:46 by marirami         ###   ########.fr       */
+/*   Created: 2022/12/20 12:22:13 by marirami          #+#    #+#             */
+/*   Updated: 2023/03/06 16:45:52 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t n)
+int	ft_atoi(const char *str)
 {
-	int			count;
-	char		*dest;
+	int	i;
+	int	sig;
+	int	nb;
 
-	dest = dst;
-	if (dst == NULL && src == NULL)
-		return (NULL);
-	if (dst > src)
+	i = 0;
+	sig = 1;
+	nb = 0;
+	while ((str[i] >= '\t' && str[i] <= '\r') || str[i] == 32)
+		i++;
+	while ((str[i] == '-' || str[i] == '+') && str[i])
 	{
-		count = (int)n - 1;
-		while (count >= 0)
-		{
-			dest[count] = ((char *)src)[count];
-			count--;
-		}
+		if (str[i] == '-')
+			sig = sig * -1;
+		i++;
+		if (str[i] == '-' || str[i] == '+')
+			return (0);
 	}
-	else
+	while (str[i] >= '0' && str[i] <= '9')
 	{
-		count = 0;
-		while (count < (int)n)
-		{
-			dest[count] = ((char *)src)[count];
-			count++;
-		}
+		nb = (nb * 10) + (str[i] - '0');
+		i++;
 	}
-	return (dst);
+	return (nb * sig);
 }

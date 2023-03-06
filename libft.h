@@ -6,14 +6,13 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 14:54:34 by marirami          #+#    #+#             */
-/*   Updated: 2023/02/27 12:47:39 by marirami         ###   ########.fr       */
+/*   Updated: 2023/03/06 16:48:28 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <string.h>
 # include <stdlib.h> 
 # include <unistd.h>
 # include <stdio.h>

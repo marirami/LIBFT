@@ -6,7 +6,7 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 11:48:31 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/27 18:04:30 by marirami         ###   ########.fr       */
+/*   Updated: 2023/03/06 16:48:21 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-/*
-#include <ctype.h>
-#include <stdio.h>
-int main ()
-{
-    printf("%c", ft_toupper('h'));
-    return (0);
-}
-*/

@@ -1,42 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/05 12:01:25 by marirami          #+#    #+#             */
-/*   Updated: 2023/03/06 16:46:46 by marirami         ###   ########.fr       */
+/*   Created: 2022/12/01 17:03:12 by marirami          #+#    #+#             */
+/*   Updated: 2023/03/06 16:46:01 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	int			count;
-	char		*dest;
+	size_t	i;
+	char	*st;
 
-	dest = dst;
-	if (dst == NULL && src == NULL)
-		return (NULL);
-	if (dst > src)
+	i = 0;
+	st = s;
+	while (i < n)
 	{
-		count = (int)n - 1;
-		while (count >= 0)
-		{
-			dest[count] = ((char *)src)[count];
-			count--;
-		}
+		st[i] = 0;
+		i++;
 	}
-	else
-	{
-		count = 0;
-		while (count < (int)n)
-		{
-			dest[count] = ((char *)src)[count];
-			count++;
-		}
-	}
-	return (dst);
 }

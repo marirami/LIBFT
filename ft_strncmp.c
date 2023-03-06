@@ -6,7 +6,7 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 11:58:46 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/28 16:27:37 by marirami         ###   ########.fr       */
+/*   Updated: 2023/03/06 16:47:53 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,3 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	}
 	return ((unsigned char)str1[count] - (unsigned char)str2[count]);
 }
-/*  #include <stdio.h>
-int main(void)
-{
-    printf("%d", ft_strncmp("Hola", "Mundoo", 2));
-}
- */

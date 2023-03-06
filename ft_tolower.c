@@ -6,7 +6,7 @@
 /*   By: marirami <marirami@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 15:00:33 by marirami          #+#    #+#             */
-/*   Updated: 2022/12/09 15:17:08 by marirami         ###   ########.fr       */
+/*   Updated: 2023/03/06 16:48:50 by marirami         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,3 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-/*
-#include <ctype.h>
-#include <stdio.h>
-int main ()
-{
-    printf("%c", ft_tolower('M'));
-    return (0);
-}
-*/
