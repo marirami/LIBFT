@@ -25,13 +25,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
-/* int main()
-{
-	char str[] = "Zero";
-
-	printf("Cadena original: %s\n", str);
-	ft_bzero(str, 1);
-	printf("Cadena después de ft_bzero: %s\n", str);
-	return (0);
-} */
