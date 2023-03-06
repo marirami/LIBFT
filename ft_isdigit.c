@@ -20,8 +20,3 @@ int	ft_isdigit(int a)
 	}
 	return (0);
 }
-
-/* int main()
-{
-	printf("%d", ft_isdigit(50));
-} */
