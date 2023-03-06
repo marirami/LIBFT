@@ -26,16 +26,3 @@ char	*ft_strdup(const char *s)
 	ft_memcpy (copy, s, len + 1);
 	return (copy);
 }
-/* #include <stdio.h>
-int main(void)
-{
-	const char *string = "Hello, World!";
-	char *copy;
-
-	copy = ft_strdup(string);
-
-	printf("Original string: %s\n", string);
-	printf("Copied string: %s\n", copy);
-
-	return 0;
-} */
