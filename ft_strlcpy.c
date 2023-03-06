@@ -29,16 +29,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t len)
 	dst[x] = '\0';
 	return (len_src);
 }
-/*#include <stdio.h>
-int main()
-{
-    char        dst[10] = "Helloo";
-    const char  src[10]  = "Blue";
-    
-   printf("Before strlcpy dst = %s, src = %s\n", dst, src);
-   
-   ft_strlcpy(dst, src, 4);
-   
-   printf("After strlcpy dst = %s, src = %s\n", dst, src);
-   return (0);
-}*/
