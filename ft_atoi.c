@@ -38,10 +38,3 @@ int	ft_atoi(const char *str)
 	}
 	return (nb * sig);
 }
-/*#include <stdlib.h>
-#include <stdio.h>
-int main ()
-{
-    printf ("%d\n", ft_atoi(" 25m5b"));
-    return (0);
-}*/
