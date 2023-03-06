@@ -40,14 +40,3 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/* #include <stdio.h>
-int main ()
-{
-    char        dest[10] = "Helloo";
-    const char  sr[10]  = "Blue";
-    
-   printf("Before memmove dest = %s, src = %s\n", dest, sr);
-   ft_memmove(dest, sr, 3);
-   printf("After memmove dest = %s, src = %s\n", dest, sr);
-   return(0);
-} */
