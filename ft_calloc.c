@@ -24,24 +24,3 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_memset(ptr, 0, count * size);
 	return (ptr);
 }
-/*#include <stdio.h>
-int main(void)
-{
-	int *array;
-	
-	array = (int *)ft_calloc(10, sizeof(int));
-	if (array == NULL)
-	{
-		printf("Error allocating memory\n");
-		return (1);
-	}
-	
-	for (int i = 0; i < 10; i++)
-	{
-		printf("%d ", array[i]);
-	}
-	printf("\n");
-	
-	free(array);
-	return (0);
-}*/
