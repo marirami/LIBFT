@@ -37,21 +37,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dstleng = size;
 	return (dstleng + srcleng);
 }
-/* #include <stdio.h>
- int main()
-{
-    char dst[20] = "viaje";
-    const char src[20] = "nuevo";
-    size_t x;
-	
-    x = ft_strlcat(dst,src,5);
-	
-    printf("%zu\n",x);
-    printf("Before strlcpy dst = %s, src = %s\n", dst, src);
-	
-    ft_strlcat(dst, src, 11);
-	
-    printf("After strlcpy dst = %s, src = %s\n", dst, src);
-    return (0);
-}
- */
