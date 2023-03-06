@@ -28,16 +28,3 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (0);
 }
-/* #include <stdio.h>
-int main () 
-{
-   const char s[] = "ho/la";
-   const char c = '/';
-   char *ret;
-
-   ret = strchr(s, c);
-   
-   printf("String after |%c| is - |%s|\n", c, ret);
-   return (0);
-}
- */
