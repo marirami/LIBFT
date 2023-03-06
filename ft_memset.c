@@ -26,16 +26,3 @@ void	*ft_memset(void *str, int c, size_t n)
 	}
 	return (str);
 }
-
-/* #include <stdio.h>
-int main()
-{
-	char str[50];
-
-	strcpy(str, "Hello World");
-	puts(str);
-
-	ft_memset(str, '$', 5);
-	puts(str);
-	return(0);
-} */
